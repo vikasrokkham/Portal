@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>AribaSupplier</display-name>
+	<servlet>
+		<servlet-name>AribaPunchOutRequest</servlet-name>
+		<display-name>AribaPunchOutRequest</display-name>
+		<description>Handle Ariba PunchOut Requests</description>
+		<servlet-class>
+		com.vormittag.cxml.util.AribaPunchOutRequest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AribaPunchOutRequest</servlet-name>
+		<url-pattern>/AribaPunchOutRequest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AribaPunchOutRequest</servlet-name>
+		<url-pattern>/ERP-Punchout</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
